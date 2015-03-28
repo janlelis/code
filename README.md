@@ -1,6 +1,6 @@
 # code [![[version]](https://badge.fury.io/rb/code.svg)](http://badge.fury.io/rb/code)
 
-Shows a method's code with syntax highlighting. Tries to find the Ruby definition of method first, then falls back to the C version (if the `core_docs` gem is available).
+Shows a method's code with syntax highlighting. Tries to find a Ruby definition of the method first, then falls back to the C version (if the **core_docs** gem is available).
 
 ## Setup
 
@@ -12,6 +12,7 @@ gem install code core_docs
 ## Usage
 
 ```ruby
+>> Code.for :require
 # in /home/jan/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:38
 ##
 # When RubyGems is required, Kernel#require is replaced with our own which
