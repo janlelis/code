@@ -36,7 +36,7 @@ module Code
     indent   = source.match(/\A +/)
     source   = source.gsub(/^#{indent}/,"")
     comment  = m.comment && !m.comment.empty? ? "#{ m.comment }" : ""
-    location = m.source_location ? "# in #{ m.source_location*':' }\n" : ""
+    location = m.source_location ? "#\n#   #{ m.source_location*':' }\n#\n" : ""
 
     display location + comment + source
   end
@@ -51,10 +51,14 @@ module Code
       raise Code::NotFound, 'Method source not found.'
     else
       source = method_info.source
-      location = "// in #{method_info.file}:#{method_info.line}\n"
+      location = "//\n//   #{cruby_on_github(method_info.file, method_info.line)}\n//\n"
       comment = method_info.docstring ?  method_info.docstring.gsub(/^/, '// ') + "\n" : ""
 
       display location + comment + source, :c
     end
+  end
+
+  def self.cruby_on_github(filename, line)
+    "https://github.com/ruby/ruby/blob/ruby_#{RUBY_VERSION[0]}_#{RUBY_VERSION[2]}/#{filename}#L#{line}"
   end
 end
