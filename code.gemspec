@@ -18,6 +18,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
 
   gem.required_ruby_version = "~> 2.0"
-  gem.add_dependency "method_source", "~> 0.8", ">= 0.8.2"
+  gem.add_dependency "method_source", "~> 0.9"
   gem.add_dependency "coderay", "~> 1.1"
 end
