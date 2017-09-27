@@ -1,6 +1,6 @@
 ## CHANGELOG
 
-### Next
+### 0.9.2
 
 * Update method_source dependency
 
