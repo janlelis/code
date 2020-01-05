@@ -6,9 +6,9 @@ Gem::Specification.new do |gem|
   gem.name          = "code"
   gem.version       = Code::VERSION
   gem.summary       = "Displays a method's code."
-  gem.description   = "Displays a method's code (from source or docs)."
+  gem.description   = "Displays a method's code (from source or docs). Supports native C source when core_docs gem is available"
   gem.authors       = ["Jan Lelis"]
-  gem.email         = "mail@janlelis.de"
+  gem.email         = ["hi@ruby.consulting"]
   gem.homepage      = "https://github.com/janlelis/code"
   gem.license       = "MIT"
 

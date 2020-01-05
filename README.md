@@ -1,4 +1,4 @@
-# code [![[version]](https://badge.fury.io/rb/code.svg)](http://badge.fury.io/rb/code)
+# code [![[version]](https://badge.fury.io/rb/code.svg)](https://badge.fury.io/rb/code)
 
 Shows a method's code with syntax highlighting. Tries to find a Ruby definition of the method first, then falls back to the C version (if the **core_docs** gem is available).
 
@@ -160,4 +160,4 @@ Be as powerful as pry's source browsing: https://github.com/pry/pry/wiki/Source-
 
 ## MIT License
 
-Copyright (C) 2015 Jan Lelis <http://janlelis.com>. Released under the MIT license.
+Copyright (C) 2015, 2017 Jan Lelis <https://janlelis.com>. Released under the MIT license.
