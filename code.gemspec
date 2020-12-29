@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ['lib']
 
-  gem.required_ruby_version = "~> 2.0"
-  gem.add_dependency "method_source", "~> 0.9"
+  gem.required_ruby_version = ">= 2.0", "< 4.0"
+  gem.add_dependency "method_source", ">= 0.9", "< 2.0"
   gem.add_dependency "coderay", "~> 1.1"
 end
