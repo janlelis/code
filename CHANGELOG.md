@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 0.9.3
+
+* Loosen dependencies to Ruby and method_source
+
 ### 0.9.2
 
 * Update method_source dependency
