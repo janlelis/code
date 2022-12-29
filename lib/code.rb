@@ -15,7 +15,12 @@ module Code
 
   # API for end user
   def self.for(object = self, method_name)
-    m = object.method(method_name)
+    if method_name.is_a?(Method) || method_name.is_a?(UnboundMethod)
+      m = method_name
+    else
+      m = object.method(method_name)
+    end
+
     begin
       from_ruby(m)
     rescue MethodSource::SourceNotFoundError
