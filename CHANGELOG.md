@@ -1,6 +1,6 @@
 ## CHANGELOG
 
-### 0.9.4 (unreleased)
+### 0.9.4
 
 * Support `Method` and `UnboundMethod` objects as argument
 
