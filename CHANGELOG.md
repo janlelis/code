@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 0.9.5
+
+* Relax Ruby requirement to allow Ruby 4.0
+
 ### 0.9.4
 
 * Support `Method` and `UnboundMethod` objects as argument
